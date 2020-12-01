@@ -214,8 +214,8 @@ const findSum = (arr)=>{
   })
     return list[0]*list[1];
   }
-let results= findSum(expenses);
-console.log(results);
+let DayOnePuzzleOne= findSum(expenses);
+document.getElementById('DayOnePuzzleOne').innerText=`Puzzle 1: ${DayOnePuzzleOne}`
 
 //Puzzle 2
 //find the 3 numbers that equal 2020, then multiply them together.
@@ -225,7 +225,6 @@ const findThree=(arr)=>{
         arr.map((s)=>{
             arr.map((t)=>{
                 if(r+s+t===2020){
-                    console.log(r,s,t);
                     results=r*s*t
                 }
             })
@@ -233,5 +232,6 @@ const findThree=(arr)=>{
     })
     return results
 }
-console.log(findThree(expenses))
+let DayOnePuzzleTwo=findThree(expenses);
+document.getElementById('DayOnePuzzleTwo').innerText=`Puzzle 2: ${DayOnePuzzleTwo}`
 
